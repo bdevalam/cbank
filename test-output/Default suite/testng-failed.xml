@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="master.cbank.tests.Verify_Title">
+      <class name="master.cbank.tests.VerifyDashBoardPageAttributes">
         <methods>
           <include name="beforeClass"/>
-          <include name="sVerifyTitle"/>
+          <include name="sVerifyDashBoardMessage"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- master.cbank.tests.Verify_Title -->
+      </class> <!-- master.cbank.tests.VerifyDashBoardPageAttributes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

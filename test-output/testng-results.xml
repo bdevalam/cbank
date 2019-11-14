@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21638" started-at="2019-11-10T01:56:52Z" finished-at="2019-11-10T01:57:14Z">
+  <suite name="Default suite" duration-ms="50603" started-at="2019-11-14T01:01:39Z" finished-at="2019-11-14T01:02:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21638" started-at="2019-11-10T01:56:52Z" finished-at="2019-11-10T01:57:14Z">
-      <class name="master.cbank.tests.Verify_Title">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:master.cbank.tests.Verify_Title@3532ec19]" name="beforeClass" is-config="true" duration-ms="15508" started-at="2019-11-10T01:56:52Z" finished-at="2019-11-10T01:57:07Z">
+    <test name="Default test" duration-ms="50603" started-at="2019-11-14T01:01:39Z" finished-at="2019-11-14T01:02:29Z">
+      <class name="master.cbank.tests.VerifyDashBoardPageAttributes">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:master.cbank.tests.VerifyDashBoardPageAttributes@27efef64]" name="beforeClass" is-config="true" duration-ms="14999" started-at="2019-11-14T01:01:39Z" finished-at="2019-11-14T01:01:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="sVerifyTitle()[pri:0, instance:master.cbank.tests.Verify_Title@3532ec19]" name="sVerifyTitle" duration-ms="161" started-at="2019-11-10T01:57:07Z" finished-at="2019-11-10T01:57:08Z">
+        <test-method status="PASS" signature="sVerifyDashBoardMessage()[pri:0, instance:master.cbank.tests.VerifyDashBoardPageAttributes@27efef64]" name="sVerifyDashBoardMessage" duration-ms="33448" started-at="2019-11-14T01:01:54Z" finished-at="2019-11-14T01:02:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sVerifyTitle -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:master.cbank.tests.Verify_Title@3532ec19]" name="afterClass" is-config="true" duration-ms="5888" started-at="2019-11-10T01:57:08Z" finished-at="2019-11-10T01:57:14Z">
+        </test-method> <!-- sVerifyDashBoardMessage -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:master.cbank.tests.VerifyDashBoardPageAttributes@27efef64]" name="afterClass" is-config="true" duration-ms="2064" started-at="2019-11-14T01:02:27Z" finished-at="2019-11-14T01:02:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- master.cbank.tests.Verify_Title -->
+      </class> <!-- master.cbank.tests.VerifyDashBoardPageAttributes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

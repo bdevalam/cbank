@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="master.cbank.tests.Verify_Title"/>
+      <class name="master.cbank.tests.VerifyDashBoardPageAttributes"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

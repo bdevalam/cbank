@@ -41,5 +41,7 @@
 	<classpathentry kind="lib" path="C:/Users/user/Desktop/Master/extentreports-4.0.9/extentreports-4.0.9/dependency/mongodb-driver-3.3.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/user/Desktop/Master/extentreports-4.0.9/extentreports-4.0.9/dependency/mongodb-driver-core-3.3.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/user/Desktop/Master/extentreports-4.0.9/extentreports-4.0.9/dependency/testng-6.9.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/user/Desktop/Master/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/user/Desktop/Master/mail-1.4.7.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
