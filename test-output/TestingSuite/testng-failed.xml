@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="10" name="Failed suite [TestingSuite]">
+  <test thread-count="1" verbose="10" name="VerifyTitle(failed)">
+    <classes>
+      <class name="master.cbank.tests.Verify_Title">
+        <methods>
+          <include name="sVerifycreationofUsers"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- master.cbank.tests.Verify_Title -->
+    </classes>
+  </test> <!-- VerifyTitle(failed) -->
+  <test thread-count="1" verbose="10" name="verifyDashboardattributes(failed)">
+    <classes>
+      <class name="master.cbank.tests.VerifyDashBoardPageAttributes">
+        <methods>
+          <include name="sVerifyDashBoardMessage"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- master.cbank.tests.VerifyDashBoardPageAttributes -->
+    </classes>
+  </test> <!-- verifyDashboardattributes(failed) -->
+  <test thread-count="1" verbose="10" name="verifycreationaccounts(failed)">
+    <classes>
+      <class name="master.cbank.tests.VerifyCreationAccounts">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="sVerifycreationofAccounts"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- master.cbank.tests.VerifyCreationAccounts -->
+    </classes>
+  </test> <!-- verifycreationaccounts(failed) -->
+</suite> <!-- Failed suite [TestingSuite] -->

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test2(failed)">
+    <classes>
+      <class name="master.cbank.tests.VerifyDashBoardPageAttributes">
+        <methods>
+          <include name="getResult"/>
+          <include name="sVerifyDashBoardMessage"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- master.cbank.tests.VerifyDashBoardPageAttributes -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" name="Test3(failed)">
+    <classes>
+      <class name="master.cbank.tests.VerifyCreatingusers">
+        <methods>
+          <include name="sAssignpersmission"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="sVerifycreationofUsers"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- master.cbank.tests.VerifyCreatingusers -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="5" name="Test4(failed)">
+    <classes>
+      <class name="master.cbank.tests.VerifyCreationAccounts">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="sVerifycreationofAccounts"/>
+          <include name="afterClass"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- master.cbank.tests.VerifyCreationAccounts -->
+    </classes>
+  </test> <!-- Test4(failed) -->
+</suite> <!-- Failed suite [Suite] -->

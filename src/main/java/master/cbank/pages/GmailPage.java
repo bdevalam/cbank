@@ -6,17 +6,19 @@ import java.util.HashMap;
 
 import org.json.simple.JSONObject;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
-
+import org.testng.Assert;
 import master.cbank.lib.PageUtils;
 import master.cbank.utils.ReadInputFiles;
 import master.cbank.utils.ReadProperties;
 
 public class GmailPage {
+	WebDriver driver;
+	PageUtils page;
+	ReadInputFiles readfiles;
+	HashMap<String, String> properties = new HashMap<String, String>();
+	HashMap<String, String> objectrepo = new HashMap<String, String>();
+	JSONObject jsonObject;
 	
 	public GmailPage(WebDriver driver) throws IOException {
 		this.driver = driver;
@@ -28,12 +30,7 @@ public class GmailPage {
 		// TODO Auto-generated constructor stub
 	}
 
-	WebDriver driver;
-	PageUtils page;
-	ReadInputFiles readfiles;
-	HashMap<String, String> properties = new HashMap<String, String>();
-	HashMap<String, String> objectrepo = new HashMap<String, String>();
-	JSONObject jsonObject;
+
 	
 /**
  * This method is to verify the email 
@@ -55,28 +52,22 @@ public class GmailPage {
     	  Thread.sleep(4000);
     	  this.driver.findElement(By.xpath(this.objectrepo.get("gmail.login.email"))).click();
     	  Thread.sleep(4000);
-    	  this.driver.findElement(By.xpath(this.objectrepo.get("gmail.login.email2"))).click();
-    	  Thread.sleep(4000);
+    	 // this.driver.findElement(By.xpath(this.objectrepo.get("gmail.login.email2"))).click();
+    	 // Thread.sleep(4000);
     	  String oldTab = this.driver.getWindowHandle();
     	  System.out.println(oldTab);
     	  this.driver.findElement(By.xpath(this.objectrepo.get("gmail.login.activate"))).click();
     	  Thread.sleep(12000);
 
     	  ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
-    	  System.out.println(tabs.size());
-    	  System.out.println(tabs.get(0));
-    	  String oldTab1 = this.driver.getWindowHandle();
-    	  System.out.println(oldTab1);
+    	 // System.out.println(tabs.size());
+    	 // System.out.println(tabs.get(0));
+    	 // String oldTab1 = this.driver.getWindowHandle();
+    	 // System.out.println(oldTab1);
     	  driver.switchTo().window(tabs.get(1));
-    	  System.out.println(tabs.get(1));
-    	  String oldTab2 = this.driver.getWindowHandle();
-    	  System.out.println(oldTab2);
-    
-    	  //tabs.remove(oldTab);
-    	 // this.driver.switchTo().window(tabs.get(1));
-    	  this.driver.findElement(By.id(this.objectrepo.get("cbank.master.users.password"))).sendKeys("ABcd12$#");
+    	  this.driver.findElement(By.id(this.objectrepo.get("cbank.master.users.password"))).sendKeys(properties.get("cPassword"));
     	  Thread.sleep(4000);
-    	  this.driver.findElement(By.id(this.objectrepo.get("cbank.master.users.cnfpassword"))).sendKeys("ABcd12$#");
+    	  this.driver.findElement(By.id(this.objectrepo.get("cbank.master.users.cnfpassword"))).sendKeys(properties.get("cPassword"));
     	  Thread.sleep(4000);
     	  this.driver.findElement(By.id(this.objectrepo.get("cbank.master.users.submit"))).click();
     	
@@ -84,6 +75,10 @@ public class GmailPage {
     	  
 		  
 	  }catch(Exception ex) {
+		  Assert.fail("Unable to verify gmail");
+		  ex.printStackTrace();
+		  
+		  
 		  
 	  }
 	  

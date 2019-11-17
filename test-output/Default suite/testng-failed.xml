@@ -5,8 +5,9 @@
     <classes>
       <class name="master.cbank.tests.VerifyDashBoardPageAttributes">
         <methods>
-          <include name="beforeClass"/>
+          <include name="getResult"/>
           <include name="sVerifyDashBoardMessage"/>
+          <include name="beforeTest"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- master.cbank.tests.VerifyDashBoardPageAttributes -->
